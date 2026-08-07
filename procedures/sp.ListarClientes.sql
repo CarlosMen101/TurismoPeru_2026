@@ -1,8 +1,7 @@
-CREATE OR ALTER PROCEDURE jllb.sp_ListarClientes
+CREATE OR ALTER PROCEDURE came.sp_ListarPersonas
 AS
 BEGIN
-    SELECT p.id_persona, p.tipo_persona, nombres, apaterno, amaterno, estado
-    FROM jllb.persona p
-    INNER JOIN jllb.cliente c ON p.id_persona = c.id_persona
+    Select id_persona, tipo_persona, nombres, apaterno, amaterno, estado
+    From came.persona
 END
 GO
